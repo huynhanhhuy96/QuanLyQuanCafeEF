@@ -1,0 +1,15 @@
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\bin\Debug\net5.0\Repo.deps.json
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\bin\Debug\net5.0\Repo.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\bin\Debug\net5.0\ref\Repo.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\bin\Debug\net5.0\Repo.pdb
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\bin\Debug\net5.0\Core.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\bin\Debug\net5.0\Core.pdb
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\obj\Debug\net5.0\Repo.csprojAssemblyReference.cache
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\obj\Debug\net5.0\Repo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\obj\Debug\net5.0\Repo.AssemblyInfoInputs.cache
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\obj\Debug\net5.0\Repo.AssemblyInfo.cs
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\obj\Debug\net5.0\Repo.csproj.CoreCompileInputs.cache
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\obj\Debug\net5.0\Repo.csproj.CopyComplete
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\obj\Debug\net5.0\Repo.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\obj\Debug\net5.0\ref\Repo.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Repo\obj\Debug\net5.0\Repo.pdb

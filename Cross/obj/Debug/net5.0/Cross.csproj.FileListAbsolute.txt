@@ -1,0 +1,17 @@
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\bin\Debug\net5.0\Cross.deps.json
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\bin\Debug\net5.0\Cross.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\bin\Debug\net5.0\ref\Cross.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\bin\Debug\net5.0\Cross.pdb
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\bin\Debug\net5.0\Core.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\bin\Debug\net5.0\Repo.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\bin\Debug\net5.0\Repo.pdb
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\bin\Debug\net5.0\Core.pdb
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\obj\Debug\net5.0\Cross.csprojAssemblyReference.cache
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\obj\Debug\net5.0\Cross.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\obj\Debug\net5.0\Cross.AssemblyInfoInputs.cache
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\obj\Debug\net5.0\Cross.AssemblyInfo.cs
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\obj\Debug\net5.0\Cross.csproj.CoreCompileInputs.cache
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\obj\Debug\net5.0\Cross.csproj.CopyComplete
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\obj\Debug\net5.0\Cross.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\obj\Debug\net5.0\ref\Cross.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\Cross\obj\Debug\net5.0\Cross.pdb
