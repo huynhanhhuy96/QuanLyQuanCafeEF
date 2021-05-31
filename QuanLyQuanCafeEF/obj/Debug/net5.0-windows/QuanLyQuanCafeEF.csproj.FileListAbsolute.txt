@@ -6,7 +6,6 @@ D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\QuanLyQ
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\ref\QuanLyQuanCafeEF.dll
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\QuanLyQuanCafeEF.pdb
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.csprojAssemblyReference.cache
-D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.Form1.resources
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.csproj.GenerateResource.cache
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.GeneratedMSBuildEditorConfig.editorconfig
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.AssemblyInfoInputs.cache
@@ -58,3 +57,7 @@ D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Repo.dl
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Cross.pdb
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Core.pdb
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Repo.pdb
+D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.frmLogin.resources
+D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.frmAccountProfile.resources
+D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.frmAdmin.resources
+D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.frmTableManager.resources

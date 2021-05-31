@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Core",
+    "\\Cross",
+    "\\QuanLyQuanCafeEF",
+    "\\Repo",
+    "\\Services"
   ],
+  "SelectedNode": "\\QuanLyQuanCafeEF\\QuanLyQuanCafeEF.sln",
   "PreviewInSolutionExplorer": false
 }
