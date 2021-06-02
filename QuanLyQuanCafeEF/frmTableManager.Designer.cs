@@ -82,9 +82,11 @@ namespace QuanLyQuanCafeEF
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // toolStripMenuItem1
             // 
+            this.toolStripMenuItem1.CheckOnClick = true;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(67, 24);
             this.toolStripMenuItem1.Text = "Admin";
@@ -103,8 +105,8 @@ namespace QuanLyQuanCafeEF
             this.toolStripMenuItem4,
             this.toolStripMenuItem5});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.OwnerItem = this.toolStripMenuItem2;
             this.contextMenuStrip1.Size = new System.Drawing.Size(197, 52);
+            this.contextMenuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip1_ItemClicked);
             // 
             // toolStripMenuItem4
             // 

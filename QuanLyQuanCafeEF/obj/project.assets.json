@@ -1521,6 +1521,19 @@
         "runtime": {
           "bin/placeholder/Repo.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -5748,11 +5761,17 @@
       "type": "project",
       "path": "../Repo/Repo.csproj",
       "msbuildProject": "../Repo/Repo.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Cross >= 1.0.0"
+      "Cross >= 1.0.0",
+      "Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5784,6 +5803,9 @@
           "projectReferences": {
             "D:\\Dev\\GitHub\\QuanLyQuanCafeEF\\Cross\\Cross.csproj": {
               "projectPath": "D:\\Dev\\GitHub\\QuanLyQuanCafeEF\\Cross\\Cross.csproj"
+            },
+            "D:\\Dev\\GitHub\\QuanLyQuanCafeEF\\Services\\Services.csproj": {
+              "projectPath": "D:\\Dev\\GitHub\\QuanLyQuanCafeEF\\Services\\Services.csproj"
             }
           }
         }

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cross\Cross.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
   </ItemGroup>
 
 </Project>

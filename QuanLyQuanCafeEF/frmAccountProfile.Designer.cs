@@ -72,6 +72,7 @@ namespace QuanLyQuanCafeEF
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnUpdate
             // 
@@ -81,6 +82,7 @@ namespace QuanLyQuanCafeEF
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Cập nhập";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // panel2
             // 

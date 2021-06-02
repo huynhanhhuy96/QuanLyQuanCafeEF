@@ -61,3 +61,5 @@ D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQ
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.frmAccountProfile.resources
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.frmAdmin.resources
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.frmTableManager.resources
+D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Services.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Services.pdb

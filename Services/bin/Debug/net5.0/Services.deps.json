@@ -6,13 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "QuanLyQuanCafeEF/1.0.0": {
+      "Services/1.0.0": {
         "dependencies": {
-          "Cross": "1.0.0",
-          "Services": "1.0.0"
+          "Core": "1.0.0"
         },
         "runtime": {
-          "QuanLyQuanCafeEF.dll": {}
+          "Services.dll": {}
         }
       },
       "Microsoft.CSharp/4.5.0": {},
@@ -331,6 +330,20 @@
       "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "Newtonsoft.Json/10.0.1": {
@@ -454,6 +467,12 @@
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "4.7.0",
           "System.Security.Permissions": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -489,6 +508,26 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.Win32.SystemEvents": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          },
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "System.Dynamic.Runtime/4.3.0": {
@@ -825,11 +864,32 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Security.Cryptography.ProtectedData/4.7.0": {},
+      "System.Security.Cryptography.ProtectedData/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
       "System.Security.Permissions/4.7.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
           "System.Windows.Extensions": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Security.Permissions.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
@@ -893,6 +953,20 @@
       "System.Windows.Extensions/4.7.0": {
         "dependencies": {
           "System.Drawing.Common": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Windows.Extensions.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "System.Xml.ReaderWriter/4.3.0": {
@@ -973,35 +1047,11 @@
         "runtime": {
           "Core.dll": {}
         }
-      },
-      "Cross/1.0.0": {
-        "dependencies": {
-          "Repo": "1.0.0"
-        },
-        "runtime": {
-          "Cross.dll": {}
-        }
-      },
-      "Repo/1.0.0": {
-        "dependencies": {
-          "Core": "1.0.0"
-        },
-        "runtime": {
-          "Repo.dll": {}
-        }
-      },
-      "Services/1.0.0": {
-        "dependencies": {
-          "Core": "1.0.0"
-        },
-        "runtime": {
-          "Services.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "QuanLyQuanCafeEF/1.0.0": {
+    "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1665,21 +1715,6 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Cross/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Repo/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
