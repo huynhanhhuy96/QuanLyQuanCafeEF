@@ -105,6 +105,7 @@ namespace QuanLyQuanCafeEF
             this.toolStripMenuItem4,
             this.toolStripMenuItem5});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.OwnerItem = this.toolStripMenuItem2;
             this.contextMenuStrip1.Size = new System.Drawing.Size(197, 52);
             this.contextMenuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip1_ItemClicked);
             // 

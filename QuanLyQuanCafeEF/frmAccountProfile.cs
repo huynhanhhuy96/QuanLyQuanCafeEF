@@ -51,26 +51,16 @@
             string reenterpass = txtReEnterPass.Text;
             string userName = txtUserName.Text;
 
+            var dbcontext = new QuanLyQuanCafeContext();
+
             if (!newpass.Equals(reenterpass))
             {
                 MessageBox.Show("Vui lòng nhập lại mật khẩu đúng với mật khẩu mới");
             }
             else
             {
-                if (CheckUpdateAccount(userName, displayName, password, newpass))
-                {
-                    MessageBox.Show("Cập nhập thành công");
-                }
-                else
-                {
-                    MessageBox.Show("Vui lòng nhập đúng mật khẩu");
-                }
-            }
-
-            bool CheckUpdateAccount(string userName, string displayName, string password, string newpass)
-            {
-                var dbcontext = new QuanLyQuanCafeContext();
                 Account acc = dbcontext.Accounts.Where(x => userName.Equals(x.UserName) && password.Equals(x.PassWord)).SingleOrDefault();
+
                 if (acc != null)
                 {
                     if (newpass == "")
@@ -85,9 +75,36 @@
 
                     dbcontext.SaveChanges();
 
-                    return true;
+                    MessageBox.Show("Cập nhập thành công");
+
+                    if (updateAccountEvent != null)
+                    {
+                        updateAccountEvent(this, new AccountEvent(acc));
+                    }
                 }
-                return false;
+                else
+                {
+                    MessageBox.Show("Vui lòng nhập đúng mật khẩu");
+                }
+            }
+        }
+
+        private event EventHandler<AccountEvent> updateAccountEvent;
+        public event EventHandler<AccountEvent> UpdateAccountEvent
+        {
+            add { updateAccountEvent += value; }
+            remove { updateAccountEvent -= value; }
+        }
+
+        public class AccountEvent : EventArgs
+        {
+            private Account acc;
+
+            public Account Acc { get => acc; set => acc = value; }
+
+            public AccountEvent(Account acc)
+            {
+                this.Acc = acc;
             }
         }
     }

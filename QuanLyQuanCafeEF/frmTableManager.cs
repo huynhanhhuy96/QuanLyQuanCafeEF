@@ -1,6 +1,7 @@
 ﻿namespace QuanLyQuanCafeEF
 {
     using Core.Models;
+    using System;
     using System.Windows.Forms;
 
     public partial class frmTableManager : Form
@@ -42,8 +43,14 @@
             if(e.ClickedItem.Text == "Thông tin cá nhân")
             {
                 frmAccountProfile f = new frmAccountProfile(loginAccount);
+                f.UpdateAccountEvent += f_UpdateAccountEvent;
                 f.ShowDialog();
             }
+        }
+
+        private void f_UpdateAccountEvent(object sender, frmAccountProfile.AccountEvent e)
+        {
+            toolStripMenuItem2.Text = $"Thông tin tài khoản ({e.Acc.DisplayName})";
         }
     }
 }
