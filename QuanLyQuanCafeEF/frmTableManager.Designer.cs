@@ -154,6 +154,7 @@ namespace QuanLyQuanCafeEF
             // 
             // fpnTable
             // 
+            this.fpnTable.AutoScroll = true;
             this.fpnTable.Location = new System.Drawing.Point(12, 31);
             this.fpnTable.Name = "fpnTable";
             this.fpnTable.Size = new System.Drawing.Size(372, 407);
@@ -196,6 +197,7 @@ namespace QuanLyQuanCafeEF
             this.AddFood.TabIndex = 2;
             this.AddFood.Text = "Thêm món";
             this.AddFood.UseVisualStyleBackColor = true;
+            this.AddFood.Click += new System.EventHandler(this.AddFood_Click);
             // 
             // cbFood
             // 
@@ -212,6 +214,7 @@ namespace QuanLyQuanCafeEF
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(223, 28);
             this.cbCategory.TabIndex = 0;
+            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -239,7 +242,7 @@ namespace QuanLyQuanCafeEF
             // columnHeader1
             // 
             this.columnHeader1.Text = "Tên món";
-            this.columnHeader1.Width = 140;
+            this.columnHeader1.Width = 120;
             // 
             // columnHeader2
             // 
@@ -299,6 +302,7 @@ namespace QuanLyQuanCafeEF
             this.btnCheckOut.TabIndex = 4;
             this.btnCheckOut.Text = "Thanh toán";
             this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // nudDiscount
             // 
