@@ -337,6 +337,7 @@ namespace QuanLyQuanCafeEF
             this.btnSwitchTable.TabIndex = 0;
             this.btnSwitchTable.Text = "Chuyển bàn";
             this.btnSwitchTable.UseVisualStyleBackColor = true;
+            this.btnSwitchTable.Click += new System.EventHandler(this.btnSwitchTable_Click);
             // 
             // frmTableManager
             // 

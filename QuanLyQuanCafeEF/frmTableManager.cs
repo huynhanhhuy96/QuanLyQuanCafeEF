@@ -30,6 +30,8 @@
 
             LoadTable();
             LoadCategory();
+
+            LoadComboboxTable(cbSwitchTable);
         }
 
         #region Method
@@ -288,6 +290,58 @@
 
                     LoadTable();
                 }
+            }
+        }
+
+        void LoadComboboxTable(ComboBox cb)
+        {
+            using var dbcontext = new QuanLyQuanCafeContext();
+            cb.DataSource = dbcontext.TableFoods.Select(x => x).ToList();
+            cb.DisplayMember = "Name";
+        }
+
+        private void btnSwitchTable_Click(object sender, EventArgs e)
+        {
+            using var dbcontext = new QuanLyQuanCafeContext();
+
+            int id1 = (lsvBill.Tag as TableFood).Id;
+            int id2 = (cbSwitchTable.SelectedItem as TableFood).Id;
+
+            TableFood table1 = dbcontext.TableFoods.Where(x => id1.Equals(x.Id)).SingleOrDefault();
+            TableFood table2 = dbcontext.TableFoods.Where(x => id2.Equals(x.Id)).SingleOrDefault();
+
+            Bill bill1 = dbcontext.Bills.Where(x => id1.Equals(x.IdTable) && x.Status == 0).SingleOrDefault();
+            Bill bill2 = dbcontext.Bills.Where(x => id2.Equals(x.IdTable) && x.Status == 0).SingleOrDefault();
+
+            if (bill1 == null && bill2 == null)
+            {
+                return;
+            }
+
+            if (MessageBox.Show($"Bạn có thật sự muốn chuyển bàn {(lsvBill.Tag as TableFood).Name} quan bàn {(cbSwitchTable.SelectedItem as TableFood).Name} ?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                if (bill1 == null )
+                {
+                    bill2.IdTable = id1;
+                    dbcontext.TableFoods.Where(x => id1.Equals(x.Id)).SingleOrDefault().Status = "Có người";
+                    dbcontext.TableFoods.Where(x => id2.Equals(x.Id)).SingleOrDefault().Status = "Trống";
+                }
+                else if (bill2 == null)
+                {
+                    bill1.IdTable = id2;
+                    dbcontext.TableFoods.Where(x => id2.Equals(x.Id)).SingleOrDefault().Status = "Có người";
+                    dbcontext.TableFoods.Where(x => id1.Equals(x.Id)).SingleOrDefault().Status = "Trống";
+                }
+                else
+                {
+                    bill1.IdTable = id2;
+                    bill2.IdTable = id1;
+                }
+
+                dbcontext.SaveChanges();
+
+                LoadTable();
+                ShowBill(id1);
             }
         }
     }
