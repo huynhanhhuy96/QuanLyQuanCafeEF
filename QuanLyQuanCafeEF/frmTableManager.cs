@@ -37,7 +37,7 @@
         #region Method
         void ChangeAccount(int type)
         {
-            toolStripMenuItem1.Enabled = type == 1;
+            tsmiAdmin.Enabled = type == 1;
             toolStripMenuItem2.Text += $" ({LoginAccount.DisplayName})";
         }
 
@@ -132,7 +132,7 @@
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (e.ClickedItem.Text == "Admin")
+            if (e.ClickedItem.Name == "tsmiAdmin")
             {
                 frmAdmin f = new frmAdmin();
                 f.ShowDialog();
@@ -141,14 +141,14 @@
 
         private void contextMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (e.ClickedItem.Text == "Thông tin cá nhân")
+            if (e.ClickedItem.Name == "tsmiAccountProfile")
             {
                 frmAccountProfile f = new frmAccountProfile(loginAccount);
                 f.UpdateAccountEvent += f_UpdateAccountEvent;
                 f.ShowDialog();
             }
 
-            if (e.ClickedItem.Text == "Đăng xuất")
+            if (e.ClickedItem.Name == "tsmiExit")
             {
                 this.Close();
             }
@@ -342,6 +342,18 @@
 
                 LoadTable();
                 ShowBill(id1);
+            }
+        }
+
+        private void contextMenuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem.Name == "tsmiAddFood")
+            {
+                AddFood_Click(this, new EventArgs());
+            }
+            if (e.ClickedItem.Name == "tsmiCheckOut")
+            {
+                btnCheckOut_Click(this, new EventArgs());
             }
         }
     }

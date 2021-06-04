@@ -31,15 +31,15 @@ namespace QuanLyQuanCafeEF
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAdmin = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAccountProfile = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiExit = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAddFood = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiCheckOut = new System.Windows.Forms.ToolStripMenuItem();
             this.fpnTable = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.nudFoodCount = new System.Windows.Forms.NumericUpDown();
@@ -74,7 +74,7 @@ namespace QuanLyQuanCafeEF
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
+            this.tsmiAdmin,
             this.toolStripMenuItem2,
             this.toolStripMenuItem3});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -84,12 +84,12 @@ namespace QuanLyQuanCafeEF
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // toolStripMenuItem1
+            // tsmiAdmin
             // 
-            this.toolStripMenuItem1.CheckOnClick = true;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(67, 24);
-            this.toolStripMenuItem1.Text = "Admin";
+            this.tsmiAdmin.CheckOnClick = true;
+            this.tsmiAdmin.Name = "tsmiAdmin";
+            this.tsmiAdmin.Size = new System.Drawing.Size(67, 24);
+            this.tsmiAdmin.Text = "Admin";
             // 
             // toolStripMenuItem2
             // 
@@ -102,24 +102,24 @@ namespace QuanLyQuanCafeEF
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5});
+            this.tsmiAccountProfile,
+            this.tsmiExit});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.OwnerItem = this.toolStripMenuItem2;
             this.contextMenuStrip1.Size = new System.Drawing.Size(197, 52);
             this.contextMenuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip1_ItemClicked);
             // 
-            // toolStripMenuItem4
+            // tsmiAccountProfile
             // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(196, 24);
-            this.toolStripMenuItem4.Text = "Thông tin cá nhân";
+            this.tsmiAccountProfile.Name = "tsmiAccountProfile";
+            this.tsmiAccountProfile.Size = new System.Drawing.Size(196, 24);
+            this.tsmiAccountProfile.Text = "Thông tin cá nhân";
             // 
-            // toolStripMenuItem5
+            // tsmiExit
             // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(196, 24);
-            this.toolStripMenuItem5.Text = "Đăng xuất";
+            this.tsmiExit.Name = "tsmiExit";
+            this.tsmiExit.Size = new System.Drawing.Size(196, 24);
+            this.tsmiExit.Text = "Đăng xuất";
             // 
             // toolStripMenuItem3
             // 
@@ -132,25 +132,26 @@ namespace QuanLyQuanCafeEF
             // 
             this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem6,
-            this.toolStripMenuItem7});
+            this.tsmiAddFood,
+            this.tsmiCheckOut});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.OwnerItem = this.toolStripMenuItem3;
             this.contextMenuStrip2.Size = new System.Drawing.Size(204, 52);
+            this.contextMenuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip2_ItemClicked);
             // 
-            // toolStripMenuItem6
+            // tsmiAddFood
             // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(203, 24);
-            this.toolStripMenuItem6.Text = "Thêm món";
+            this.tsmiAddFood.Name = "tsmiAddFood";
+            this.tsmiAddFood.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.tsmiAddFood.Size = new System.Drawing.Size(203, 24);
+            this.tsmiAddFood.Text = "Thêm món";
             // 
-            // toolStripMenuItem7
+            // tsmiCheckOut
             // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(203, 24);
-            this.toolStripMenuItem7.Text = "Thanh toán";
+            this.tsmiCheckOut.Name = "tsmiCheckOut";
+            this.tsmiCheckOut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.tsmiCheckOut.Size = new System.Drawing.Size(203, 24);
+            this.tsmiCheckOut.Text = "Thanh toán";
             // 
             // fpnTable
             // 
@@ -370,14 +371,14 @@ namespace QuanLyQuanCafeEF
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAdmin;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAccountProfile;
+        private System.Windows.Forms.ToolStripMenuItem tsmiExit;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem tsmi;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.FlowLayoutPanel fpnTable;
         private System.Windows.Forms.Panel panel1;
@@ -399,5 +400,8 @@ namespace QuanLyQuanCafeEF
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAddFood;
+        private System.Windows.Forms.ToolStripMenuItem tsmiCheckOut;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
     }
 }
