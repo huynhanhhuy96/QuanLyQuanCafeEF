@@ -135,6 +135,7 @@
             if (e.ClickedItem.Name == "tsmiAdmin")
             {
                 frmAdmin f = new frmAdmin();
+                f.loginAccount = LoginAccount;
                 f.ShowDialog();
                 LoadCategory();
                 LoadTable();

@@ -15,6 +15,9 @@
     {
         const int billByPage = 5;
         BindingSource foodList = new BindingSource();
+        BindingSource accountList = new BindingSource();
+
+        public Account loginAccount;
 
         public frmAdmin()
         {
@@ -27,6 +30,7 @@
         void LoadAll()
         {
             dgvFood.DataSource = foodList;
+            dgvAccount.DataSource = accountList;
 
             LoadDateTimePickerBill();
             LoadListViewByDate(dtpFromDate.Value, dtpToDate.Value, txtPage.Text, billByPage);
@@ -34,6 +38,9 @@
             LoadListFood();
             AddFoodBinding();
             LoadCategoryIntoCombobox(cbFoodCategory);
+
+            LoadAccount();
+            AddAccountBinding();
         }
 
         void LoadDateTimePickerBill()
@@ -89,11 +96,28 @@
 
             return listFood;
         }
+
+        void LoadAccount()
+        {
+            using var dbcontext = new QuanLyQuanCafeContext();
+
+            accountList.DataSource = dbcontext.Accounts.Select(x => new
+            {
+                x.UserName,
+                x.DisplayName,
+                x.Type
+            }).ToList();
+        }
+
+        void AddAccountBinding()
+        {
+            txtAccountUserName.DataBindings.Add(new Binding("Text", dgvAccount.DataSource, "UserName", true, DataSourceUpdateMode.Never));
+            txtAccountDisplayName.DataBindings.Add(new Binding("Text", dgvAccount.DataSource, "DisplayName", true, DataSourceUpdateMode.Never));
+            txtAccountType.DataBindings.Add(new Binding("Value", dgvAccount.DataSource, "Type", true, DataSourceUpdateMode.Never));
+        }
         #endregion
 
         #region Events
-
-        #endregion
 
         private void btnFirstViewPage_Click(object sender, EventArgs e)
         {
@@ -283,6 +307,110 @@
         private void btnSearchFood_Click(object sender, EventArgs e)
         {
             foodList.DataSource = SearchFoodByName(txtSearchFoodName.Text);
+        }
+
+        #endregion
+
+        private void btnAddAccount_Click(object sender, EventArgs e)
+        {
+            using var dbcontext = new QuanLyQuanCafeContext();
+
+            string userName = txtAccountUserName.Text;
+            string displayName = txtAccountDisplayName.Text;
+            int type = (int)txtAccountType.Value;
+
+            Account newAcc = new Account();
+            newAcc.UserName = userName;
+            newAcc.DisplayName = displayName;
+            newAcc.Type = type;
+
+            dbcontext.Add(newAcc);
+
+            int numberRows = dbcontext.SaveChanges();
+
+            if (numberRows > 0)
+            {
+                MessageBox.Show("Thêm tài khoản thành công");
+                LoadAccount();
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi khi thêm tài khoản");
+            }
+        }
+
+        private void btnShowAccount_Click(object sender, EventArgs e)
+        {
+            LoadAccount();
+        }
+
+        private void btnEditAccount_Click(object sender, EventArgs e)
+        {
+            using var dbcontext = new QuanLyQuanCafeContext();
+
+            string userName = txtAccountUserName.Text;
+            string displayName = txtAccountDisplayName.Text;
+            int type = (int)txtAccountType.Value;
+
+            Account acc = dbcontext.Accounts.Where(x => userName.Equals(x.UserName)).SingleOrDefault();
+
+            acc.DisplayName = displayName;
+            acc.Type = type;
+
+            int numberRows = dbcontext.SaveChanges();
+
+            if (numberRows > 0)
+                MessageBox.Show("Cập nhập tài khoản thành công");
+            else
+                MessageBox.Show("Cập nhập tài khoản thất bại");
+
+            LoadAccount();
+        }
+
+        private void btnDeleteAccount_Click(object sender, EventArgs e)
+        {
+            using var dbcontext = new QuanLyQuanCafeContext();
+
+            string userName = txtAccountUserName.Text;
+
+            if (loginAccount.UserName.Equals(userName))
+            {
+                MessageBox.Show("Bậy nào đừng xóa bản thân mình bạn êi");
+                return;
+            }
+
+            Account acc = dbcontext.Accounts.Where(x => userName.Equals(x.UserName)).SingleOrDefault();
+
+            dbcontext.Remove(acc);
+
+            int numberRows = dbcontext.SaveChanges();
+
+            if (numberRows > 0)
+                MessageBox.Show("Cập nhập tài khoản thành công");
+            else
+                MessageBox.Show("Cập nhập tài khoản thất bại");
+
+            LoadAccount();
+        }
+
+        private void btnResetPassword_Click(object sender, EventArgs e)
+        {
+            using var dbcontext = new QuanLyQuanCafeContext();
+
+            string userName = txtAccountUserName.Text;
+
+            Account acc = dbcontext.Accounts.Where(x => userName.Equals(x.UserName)).SingleOrDefault();
+
+            acc.PassWord = "0";
+
+            int numberRows = dbcontext.SaveChanges();
+
+            if (numberRows > 0)
+                MessageBox.Show("Đặt lại tài khoản thành công");
+            else
+                MessageBox.Show("Đặt lại tài khoản thất bại");
+
+            LoadAccount();
         }
     }
 }
