@@ -136,6 +136,9 @@
             {
                 frmAdmin f = new frmAdmin();
                 f.ShowDialog();
+                LoadCategory();
+                LoadTable();
+                lsvBill.Items.Clear();
             }
         }
 

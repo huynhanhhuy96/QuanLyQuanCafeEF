@@ -332,6 +332,11 @@ namespace QuanLyQuanCafeEF
             // nudFoodPrice
             // 
             this.nudFoodPrice.Location = new System.Drawing.Point(127, 11);
+            this.nudFoodPrice.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
             this.nudFoodPrice.Name = "nudFoodPrice";
             this.nudFoodPrice.Size = new System.Drawing.Size(207, 27);
             this.nudFoodPrice.TabIndex = 1;
@@ -415,6 +420,7 @@ namespace QuanLyQuanCafeEF
             this.txtFoodId.Name = "txtFoodId";
             this.txtFoodId.Size = new System.Drawing.Size(207, 27);
             this.txtFoodId.TabIndex = 1;
+            this.txtFoodId.TextChanged += new System.EventHandler(this.txtFoodId_TextChanged);
             // 
             // label1
             // 
@@ -450,6 +456,7 @@ namespace QuanLyQuanCafeEF
             this.btnSearchFood.TabIndex = 4;
             this.btnSearchFood.Text = "Tìm";
             this.btnSearchFood.UseVisualStyleBackColor = true;
+            this.btnSearchFood.Click += new System.EventHandler(this.btnSearchFood_Click);
             // 
             // panel4
             // 
@@ -488,6 +495,7 @@ namespace QuanLyQuanCafeEF
             this.btnShowFood.TabIndex = 3;
             this.btnShowFood.Text = "Xem";
             this.btnShowFood.UseVisualStyleBackColor = true;
+            this.btnShowFood.Click += new System.EventHandler(this.btnShowFood_Click);
             // 
             // btnEditFood
             // 
@@ -497,6 +505,7 @@ namespace QuanLyQuanCafeEF
             this.btnEditFood.TabIndex = 2;
             this.btnEditFood.Text = "Sửa";
             this.btnEditFood.UseVisualStyleBackColor = true;
+            this.btnEditFood.Click += new System.EventHandler(this.btnEditFood_Click);
             // 
             // btnDeleteFood
             // 
@@ -506,6 +515,7 @@ namespace QuanLyQuanCafeEF
             this.btnDeleteFood.TabIndex = 1;
             this.btnDeleteFood.Text = "Xóa";
             this.btnDeleteFood.UseVisualStyleBackColor = true;
+            this.btnDeleteFood.Click += new System.EventHandler(this.btnDeleteFood_Click);
             // 
             // btnAddFood
             // 
@@ -515,6 +525,7 @@ namespace QuanLyQuanCafeEF
             this.btnAddFood.TabIndex = 0;
             this.btnAddFood.Text = "Thêm";
             this.btnAddFood.UseVisualStyleBackColor = true;
+            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
             // tabPage3
             // 
