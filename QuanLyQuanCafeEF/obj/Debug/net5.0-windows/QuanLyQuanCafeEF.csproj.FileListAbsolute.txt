@@ -63,3 +63,6 @@ D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQ
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\obj\Debug\net5.0-windows\QuanLyQuanCafeEF.frmTableManager.resources
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Services.dll
 D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Services.pdb
+D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Humanizer.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\Dev\GitHub\QuanLyQuanCafeEF\QuanLyQuanCafeEF\bin\Debug\net5.0-windows\dotnet-ef.dll
